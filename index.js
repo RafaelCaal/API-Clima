@@ -99,6 +99,5 @@ window.transmision.recibeOtroDia(function(event,args){
 
 })
 
-
-
 },3000)
+
