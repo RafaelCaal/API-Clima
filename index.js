@@ -68,6 +68,37 @@ window.transmision.recibeClimaNoche(function(event,args){
     labelHoyNoche.innerHTML = " Por la noche &ensp;" + args  
 })
 window.transmision.recibeOtroDia(function(event,args){
-    labelOtroDia.innerHTML = args  
+    labelOtroDia.innerHTML = args 
+    var divImagen = document.getElementById('imagen');
+    divImagen.innerHTML = ""
+    
+    if(args == "Despejado"){
+        var elem = document.createElement("img");
+        elem.setAttribute("src", "https://images.pexels.com/photos/96622/pexels-photo-96622.jpeg");
+        elem.setAttribute("height", "60");
+        elem.setAttribute("width", "350");
+        elem.setAttribute("alt", "Flower");
+        document.getElementById("imagen").appendChild(elem);
+    }
+    if(args == "Nublado"){
+        var elem = document.createElement("img");
+        elem.setAttribute("src", "https://images.pexels.com/photos/3816393/pexels-photo-3816393.jpeg");
+        elem.setAttribute("height", "60");
+        elem.setAttribute("width", "350");
+        elem.setAttribute("alt", "Flower");
+        document.getElementById("imagen").appendChild(elem);
+    } 
+    if(args == "Lluvioso"){
+        var elem = document.createElement("img");
+        elem.setAttribute("src", "https://images.pexels.com/photos/4297438/pexels-photo-4297438.jpeg");
+        elem.setAttribute("height", "60");
+        elem.setAttribute("width", "350");
+        elem.setAttribute("alt", "Flower");
+        document.getElementById("imagen").appendChild(elem);
+    } 
+
 })
+
+
+
 },3000)
