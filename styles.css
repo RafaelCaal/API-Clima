@@ -15,10 +15,10 @@ body {
     /* background-color: red; */
     padding: 3px;
     margin: 3px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-size: contain;
     /* min-height: 20vh; */
 }
